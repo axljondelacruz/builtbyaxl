@@ -1,10 +1,10 @@
 const services = [
-  { no: "01", title: "Web Design", desc: "Clean, modern layouts that fit your brand and actually convert visitors into customers — not generic templates." },
-  { no: "02", title: "Development", desc: "Hand-built, fast-loading sites in modern frameworks. No clunky page builders dragging you down." },
-  { no: "03", title: "Landing Pages", desc: "Single-purpose pages built to launch a product, promo, or campaign and get people to act." },
-  { no: "04", title: "Refresh & Rebuild", desc: "Got an old, slow, or broken site? I'll modernize it without losing what already works." },
-  { no: "05", title: "Contact & Forms", desc: "Working contact forms, booking links, and email setup so leads actually reach you." },
-  { no: "06", title: "Care & Updates", desc: "Ongoing tweaks, content updates, and fixes so your site keeps earning its keep." },
+  { no: "01", title: "Web Design", desc: "A layout built around your business — what you sell, who you serve, what makes people call. Not a template with your logo pasted on." },
+  { no: "02", title: "Development", desc: "Hand-coded and fast. Loads quick on a phone in a parking lot, which is where your customers actually are." },
+  { no: "03", title: "Landing Pages", desc: "One page, one job: launch a promo, push a product, fill a class. Built to get clicks turned into calls." },
+  { no: "04", title: "Refresh & Rebuild", desc: "Old site embarrassing you? I'll rebuild it sharp and fast — and keep the parts that already bring in work." },
+  { no: "05", title: "Contact & Forms", desc: "Forms that reach your inbox, booking links that fill your calendar. Leads land where you'll actually see them." },
+  { no: "06", title: "Care & Updates", desc: "New hours, new menu, new photos — send them over and they're up. Your site stays current without you touching code." },
 ];
 
 export default function Services() {
