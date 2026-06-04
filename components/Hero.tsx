@@ -6,14 +6,14 @@ export default function Hero() {
           <span className="dot" /> Web studio · Las Vegas
         </span>
         <h1 className="display reveal d2">
-          Websites<br />
-          <span className="hot">built right</span><br />
-          <span className="stroke">for small biz</span>
+          Your website.<br />
+          <span className="hot">No agency.</span><br />
+          <span className="stroke">No rent.</span>
         </h1>
         <p className="hero-sub reveal d3">
-          I design and build fast, modern websites for small businesses and local
-          companies — no bloated page builders, no monthly hostage fees. Just clean
-          code that works and looks sharp.
+          Agencies charge five figures. Page builders charge forever. I build your
+          site by hand — fast, sharp, and yours outright — for a price a small
+          business can actually say yes to.
         </p>
         <div className="hero-actions reveal d4">
           <a className="btn btn-primary" href="#contact">Start a project →</a>
