@@ -19,7 +19,7 @@ export default function Process() {
           {steps.map((s) => (
             <div className="step" key={s.k}>
               <div className="k">{s.k}</div>
-              <h4>{s.h}</h4>
+              <h3>{s.h}</h3>
               <p>{s.p}</p>
             </div>
           ))}
