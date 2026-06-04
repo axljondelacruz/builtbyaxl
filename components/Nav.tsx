@@ -9,6 +9,7 @@ export default function Nav() {
         <div className="nav-links">
           <a className="muted" href="#services">Services</a>
           <a className="muted" href="#process">Process</a>
+          <a className="muted" href="#work">Work</a>
           <a className="muted" href="#contact">Contact</a>
           <a className="nav-cta" href="#contact">Start a project</a>
         </div>
