@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Work from "@/components/Work";
+import Pricing from "@/components/Pricing";
 import CtaStrip from "@/components/CtaStrip";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function Home() {
         <Services />
         <Process />
         <Work />
+        <Pricing />
         <CtaStrip />
         <Contact />
       </main>

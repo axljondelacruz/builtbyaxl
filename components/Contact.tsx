@@ -30,7 +30,7 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="wrap">
-        <div className="section-num">[ 04 ] — CONTACT</div>
+        <div className="section-num">[ 05 ] — CONTACT</div>
         <h2 className="section-title display">Start a project</h2>
         <p className="section-lead">
           Tell me a bit about your business and what you need. I&apos;ll get back
