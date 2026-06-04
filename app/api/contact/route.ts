@@ -5,7 +5,13 @@ export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, business, message } = await req.json();
+    const { name, email, business, message, website } = await req.json();
+
+    // Honeypot: real visitors never fill the hidden "website" field.
+    // Bots that do get a fake success so they don't retry.
+    if (website) {
+      return NextResponse.json({ ok: true });
+    }
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
