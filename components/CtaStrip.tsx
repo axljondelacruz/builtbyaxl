@@ -1,0 +1,10 @@
+export default function CtaStrip() {
+  return (
+    <div className="wrap">
+      <div className="cta-strip">
+        <h2>Got a business?<br />Let&apos;s get it online.</h2>
+        <a className="btn btn-primary" href="#contact">Start a project →</a>
+      </div>
+    </div>
+  );
+}
