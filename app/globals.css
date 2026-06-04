@@ -163,6 +163,8 @@ a { color: inherit; text-decoration: none; }
 }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 3px 3px 0 var(--accent); }
 .form-note { font-size: 14px; color: var(--steel); margin-top: 4px; }
+/* Honeypot field — visually removed, still in the DOM for bots */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .contact-side .line { display:flex; gap: 12px; align-items:flex-start; margin-bottom: 22px; }
 .contact-side .line .ic { width: 38px; height: 38px; border: 2px solid var(--ink); display:grid; place-items:center; flex-shrink:0; background: var(--accent); }
 .contact-side .line .lbl { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--steel); font-weight: 700; }
