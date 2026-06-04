@@ -2,7 +2,7 @@ const tiers = [
   {
     no: "01",
     name: "Landing Page",
-    price: "from $750",
+    price: "from $XXX",
     blurb: "One sharp page that gets people to act.",
     features: [
       "Single-page design & build",
@@ -15,7 +15,7 @@ const tiers = [
   {
     no: "02",
     name: "Full Site",
-    price: "from $2,500",
+    price: "from $X,XXX",
     blurb: "The complete web presence for your business.",
     features: [
       "Multi-section custom design",
@@ -28,7 +28,7 @@ const tiers = [
   {
     no: "03",
     name: "Rebuild + Care",
-    price: "from $3,000",
+    price: "from $X,XXX",
     blurb: "Your old site, rebuilt right — and kept current.",
     features: [
       "Full rebuild of an existing site",
@@ -52,7 +52,10 @@ export default function Pricing() {
         </p>
         <div className="price-grid">
           {tiers.map((t) => (
-            <div className={t.featured ? "price-card featured" : "price-card"} key={t.no}>
+            <div
+              className={t.featured ? "price-card featured" : "price-card"}
+              key={t.no}
+            >
               {t.featured && <div className="price-flag">Most popular</div>}
               <div className="price-no">{t.no}</div>
               <h3>{t.name}</h3>
