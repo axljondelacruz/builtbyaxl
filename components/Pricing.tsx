@@ -44,7 +44,7 @@ export default function Pricing() {
   return (
     <section className="section" id="pricing">
       <div className="wrap">
-        <div className="section-num">[ 04 ] — PRICING</div>
+        <div className="section-num">[ 05 ] — PRICING</div>
         <h2 className="section-title display">Flat &amp; fair</h2>
         <p className="section-lead">
           One price, agreed up front. No hourly meter, no surprise invoices, no
