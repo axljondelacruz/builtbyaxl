@@ -2,7 +2,7 @@ const tiers = [
   {
     no: "01",
     name: "Landing Page",
-    price: "from $XXX",
+    price: "from $750",
     blurb: "One sharp page that gets people to act.",
     features: [
       "Single-page design & build",
@@ -15,7 +15,7 @@ const tiers = [
   {
     no: "02",
     name: "Full Site",
-    price: "from $X,XXX",
+    price: "from $2,500",
     blurb: "The complete web presence for your business.",
     features: [
       "Multi-section custom design",
@@ -28,7 +28,7 @@ const tiers = [
   {
     no: "03",
     name: "Rebuild + Care",
-    price: "from $X,XXX",
+    price: "from $3,000",
     blurb: "Your old site, rebuilt right — and kept current.",
     features: [
       "Full rebuild of an existing site",
