@@ -44,7 +44,7 @@ export default function Pricing() {
   return (
     <section className="section" id="pricing">
       <div className="wrap">
-        <div className="section-num">[ 04 ] — PRICING</div>
+        <div className="section-num">[ 05 ] — PRICING</div>
         <h2 className="section-title display">Flat &amp; fair</h2>
         <p className="section-lead">
           One price, agreed up front. No hourly meter, no surprise invoices, no
@@ -52,7 +52,10 @@ export default function Pricing() {
         </p>
         <div className="price-grid">
           {tiers.map((t) => (
-            <div className={t.featured ? "price-card featured" : "price-card"} key={t.no}>
+            <div
+              className={t.featured ? "price-card featured" : "price-card"}
+              key={t.no}
+            >
               {t.featured && <div className="price-flag">Most popular</div>}
               <div className="price-no">{t.no}</div>
               <h3>{t.name}</h3>
