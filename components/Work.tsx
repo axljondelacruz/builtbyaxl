@@ -12,7 +12,7 @@ const projects = [
     tag: "Studio site",
     title: "Built by Axl",
     mark: "BBA",
-    desc: "The site you're on right now. Designed and built from scratch — fast, no page builder, no monthly fees. Exactly what you'd get.",
+    desc: "You're looking at it. Designed and built from scratch — fast, no page builder, no monthly fees. This is exactly what you'd get.",
     href: "https://builtbyaxl.com/",
   },
 ];

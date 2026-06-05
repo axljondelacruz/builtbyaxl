@@ -33,8 +33,8 @@ export default function Contact() {
         <div className="section-num" data-reveal>[ 07 ] — CONTACT</div>
         <h2 className="section-title display rd-1" data-reveal>Start a project</h2>
         <p className="section-lead rd-2" data-reveal>
-          Tell me a bit about your business and what you need. I&apos;ll get back
-          to you within a day.
+          Tell me about your business and what you need — two sentences is
+          plenty. I&apos;ll get back to you within a day.
         </p>
 
         <div className="contact-grid">
