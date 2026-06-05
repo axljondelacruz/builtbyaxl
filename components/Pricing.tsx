@@ -44,16 +44,17 @@ export default function Pricing() {
   return (
     <section className="section" id="pricing">
       <div className="wrap">
-        <div className="section-num">[ 05 ] — PRICING</div>
-        <h2 className="section-title display">Flat &amp; fair</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 05 ] — PRICING</div>
+        <h2 className="section-title display rd-1" data-reveal>Flat &amp; fair</h2>
+        <p className="section-lead rd-2" data-reveal>
           One price, agreed up front. No hourly meter, no surprise invoices, no
           monthly rent on your own website.
         </p>
         <div className="price-grid">
-          {tiers.map((t) => (
+          {tiers.map((t, i) => (
             <div
-              className={t.featured ? "price-card featured" : "price-card"}
+              className={`price-card${t.featured ? " featured" : ""} rd-${i + 1}`}
+              data-reveal
               key={t.no}
             >
               {t.featured && <div className="price-flag">Most popular</div>}
@@ -72,7 +73,7 @@ export default function Pricing() {
             </div>
           ))}
         </div>
-        <p className="price-note">
+        <p className="price-note" data-reveal>
           Every project is different — these are honest starting points, not
           gotchas. Exact quote after we talk.
         </p>

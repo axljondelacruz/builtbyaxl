@@ -30,15 +30,15 @@ export default function Contact() {
   return (
     <section className="section" id="contact">
       <div className="wrap">
-        <div className="section-num">[ 07 ] — CONTACT</div>
-        <h2 className="section-title display">Start a project</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 07 ] — CONTACT</div>
+        <h2 className="section-title display rd-1" data-reveal>Start a project</h2>
+        <p className="section-lead rd-2" data-reveal>
           Tell me a bit about your business and what you need. I&apos;ll get back
           to you within a day.
         </p>
 
         <div className="contact-grid">
-          <div>
+          <div className="rd-1" data-reveal>
             <div className="field">
               <label htmlFor="contact-name">Name *</label>
               <input id="contact-name" name="name" autoComplete="name" value={form.name} onChange={(e) => update("name", e.target.value)} placeholder="Your name" />
@@ -83,7 +83,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="contact-side">
+          <div className="contact-side rd-2" data-reveal>
             <div className="line">
               <div className="ic" aria-hidden="true">✉</div>
               <div>

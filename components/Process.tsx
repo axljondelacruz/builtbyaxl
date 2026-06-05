@@ -9,15 +9,15 @@ export default function Process() {
   return (
     <section className="section" id="process">
       <div className="wrap">
-        <div className="section-num">[ 02 ] — PROCESS</div>
-        <h2 className="section-title display">How it works</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 02 ] — PROCESS</div>
+        <h2 className="section-title display rd-1" data-reveal>How it works</h2>
+        <p className="section-lead rd-2" data-reveal>
           Straightforward and built for busy owners who don&apos;t have time for
           agency runaround.
         </p>
         <div className="steps">
-          {steps.map((s) => (
-            <div className="step" key={s.k}>
+          {steps.map((s, i) => (
+            <div className={`step rd-${i + 1}`} data-reveal key={s.k}>
               <div className="k">{s.k}</div>
               <h3>{s.h}</h3>
               <p>{s.p}</p>

@@ -1,3 +1,5 @@
+import CountUp from "./CountUp";
+
 export default function Hero() {
   return (
     <header className="hero" id="top">
@@ -20,7 +22,7 @@ export default function Hero() {
           <a className="btn btn-ghost" href="#services">See what I do</a>
         </div>
         <div className="hero-meta reveal d5">
-          <div className="stat"><div className="n">10+ yrs</div><div className="l">Engineering</div></div>
+          <div className="stat"><div className="n"><CountUp to={10} suffix="+" delay={450} /> yrs</div><div className="l">Engineering</div></div>
           <div className="stat"><div className="n">Fast</div><div className="l">Turnaround</div></div>
           <div className="stat"><div className="n">Local</div><div className="l">& remote</div></div>
         </div>

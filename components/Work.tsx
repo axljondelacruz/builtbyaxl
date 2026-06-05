@@ -29,16 +29,17 @@ export default function Work() {
   return (
     <section className="section" id="work">
       <div className="wrap">
-        <div className="section-num">[ 03 ] — WORK</div>
-        <h2 className="section-title display">Built &amp; shipped</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 03 ] — WORK</div>
+        <h2 className="section-title display rd-1" data-reveal>Built &amp; shipped</h2>
+        <p className="section-lead rd-2" data-reveal>
           What&apos;s out in the world so far — and room on the wall for what&apos;s
           next.
         </p>
         <div className="work-grid">
-          {projects.map((p) => (
+          {projects.map((p, i) => (
             <a
-              className="work-card work-card-link"
+              className={`work-card work-card-link rd-${i + 1}`}
+              data-reveal
               key={p.no}
               href={p.href}
               target="_blank"
@@ -56,7 +57,7 @@ export default function Work() {
             </a>
           ))}
           {openSlots.map((s) => (
-            <a className="work-card work-card-open" key={s.no} href="#contact">
+            <a className="work-card work-card-open rd-3" data-reveal key={s.no} href="#contact">
               <div className="work-thumb" aria-hidden="true">
                 <span className="work-thumb-mark">{s.no}</span>
               </div>
