@@ -34,7 +34,8 @@ export default function Contact() {
         <h2 className="section-title display rd-1" data-reveal>Start a project</h2>
         <p className="section-lead rd-2" data-reveal>
           Tell me about your business and what you need — two sentences is
-          plenty. I&apos;ll get back to you within a day.
+          plenty. I read every message myself and I&apos;ll get back to you
+          within a day.
         </p>
 
         <div className="contact-grid">

@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: "What if I need changes after launch?",
-    a: "Small fixes shortly after launch are on me. After that, you can pay per change, or pick the Rebuild + Care package which includes monthly updates. Either way you're never stuck waiting on an agency ticket queue.",
+    a: "Small fixes shortly after launch are on me. After that, you can pay per change, or pick the Rebuild + Care package which includes monthly updates. Either way, you message me directly and it gets handled.",
   },
   {
     q: "I already have a website. Can you fix it instead?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "Can we meet in person?",
-    a: "If you're in the Las Vegas area, yes — coffee works. Otherwise a call does the job. Either way you talk to the person actually building your site, not an account manager.",
+    a: "If you're in the Las Vegas area, yes — coffee works. Otherwise a call does the job. Either way, you're talking to the person actually building your site.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function Faq() {
         <div className="section-num" data-reveal>[ 06 ] — FAQ</div>
         <h2 className="section-title display rd-1" data-reveal>Fair questions</h2>
         <p className="section-lead rd-2" data-reveal>
-          The stuff owners actually ask before hiring someone to build their
+          The stuff people actually ask before hiring someone to build their
           site. Straight answers, no fine print.
         </p>
         <div className="faq-list">

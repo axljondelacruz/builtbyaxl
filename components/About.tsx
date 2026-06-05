@@ -20,17 +20,17 @@ export default function About() {
         <div className="about-grid">
           <div className="about-copy rd-1" data-reveal>
             <p>
-              Hire an agency and here&apos;s what happens: you talk to a
-              salesperson, get handed to an account manager, and your site gets
-              built by someone you&apos;ll never meet. Every layer costs you
-              money, slows things down, and waters down what you actually asked
-              for.
+              Since graduating from college, I&apos;ve wanted to build for
+              the people agencies overlook — the shops that hold a
+              neighborhood together, and the founders with an idea and a
+              deadline. Built by Axl is that mission, all grown up.
             </p>
             <p>
-              With me, the person you text is the person who designs your site,
-              builds it, and picks up the phone after launch. You explain your
-              business once — to me — and nothing gets lost in a handoff.
-              You&apos;re also not paying for anyone&apos;s office.
+              So when you work with me, the person you text is the person who
+              designs your site, builds it, and picks up the phone after
+              launch. You explain your business once — to me — and nothing
+              gets lost in a handoff. It&apos;s the closest thing to having a
+              web developer of your own.
             </p>
             <div className="about-sig-row">
               <div className="about-avatar">
