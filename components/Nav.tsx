@@ -12,6 +12,7 @@ export default function Nav() {
           <a className="muted" href="#work">Work</a>
           <a className="muted" href="#about">About</a>
           <a className="muted" href="#pricing">Pricing</a>
+          <a className="muted" href="#faq">FAQ</a>
           <a className="muted" href="#contact">Contact</a>
           <a className="nav-cta" href="#contact">Start a project</a>
         </div>
