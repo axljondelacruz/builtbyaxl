@@ -46,11 +46,15 @@ export default function Avatar() {
         fill="var(--ink)"
       />
       {/* brows */}
-      <rect x="92" y="103" width="22" height="6" fill="var(--ink)" />
-      <rect x="126" y="103" width="22" height="6" fill="var(--ink)" />
+      <g className="av-brows">
+        <rect x="92" y="103" width="22" height="6" fill="var(--ink)" />
+        <rect x="126" y="103" width="22" height="6" fill="var(--ink)" />
+      </g>
       {/* eyes */}
-      <rect x="97" y="115" width="12" height="11" fill="var(--ink)" />
-      <rect x="131" y="115" width="12" height="11" fill="var(--ink)" />
+      <g className="av-eyes">
+        <rect x="97" y="115" width="12" height="11" fill="var(--ink)" />
+        <rect x="131" y="115" width="12" height="11" fill="var(--ink)" />
+      </g>
       {/* nose */}
       <polyline
         points="120,119 114,140 125,140"
@@ -58,8 +62,16 @@ export default function Avatar() {
         stroke="var(--ink)"
         strokeWidth="4"
       />
-      {/* mouth — confident, level */}
-      <rect x="106" y="151" width="28" height="5" fill="var(--ink)" />
+      {/* sideburns */}
+      <rect x="78" y="100" width="8" height="30" fill="var(--ink)" />
+      <rect x="154" y="100" width="8" height="30" fill="var(--ink)" />
+      {/* beard — full, like the real thing */}
+      <polygon
+        points="78,128 86,124 98,142 142,142 154,124 162,128 162,134 144,166 96,166 78,134"
+        fill="var(--ink)"
+      />
+      {/* mouth — a grin cut into the beard */}
+      <rect x="106" y="150" width="28" height="6" fill="var(--bone)" />
     </svg>
   );
 }
