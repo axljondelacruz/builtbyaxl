@@ -7,18 +7,21 @@ const projects = [
     desc: "Pre-launch site for an automated checkout service for collectors. Landing page, waitlist signup, and a members-only area — live and collecting signups.",
     href: "https://www.autobotaco.com/",
   },
+  {
+    no: "02",
+    tag: "Studio site",
+    title: "Built by Axl",
+    mark: "BBA",
+    desc: "The site you're on right now. Designed and built from scratch — fast, no page builder, no monthly fees. Exactly what you'd get.",
+    href: "https://builtbyaxl.com/",
+  },
 ];
 
 const openSlots = [
   {
-    no: "02",
+    no: "03",
     title: "Your business here",
     desc: "This slot is open. If your shop, service, or side hustle needs a site, it could be the next thing on this wall.",
-  },
-  {
-    no: "03",
-    title: "Next on the bench",
-    desc: "Got an old site that's embarrassing you, or no site at all? Reach out — rebuilds and from-scratch builds both welcome.",
   },
 ];
 
