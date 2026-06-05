@@ -20,16 +20,17 @@ export default function About() {
         <div className="about-grid">
           <div className="about-copy rd-1" data-reveal>
             <p>
-              Hire an agency and you talk to a salesperson, get handed to an
-              account manager, and your site gets built by someone you never
-              meet. Every layer adds cost, slows things down, and waters down
-              what you actually asked for.
+              Hire an agency and here&apos;s what happens: you talk to a
+              salesperson, get handed to an account manager, and your site gets
+              built by someone you&apos;ll never meet. Every layer costs you
+              money, slows things down, and waters down what you actually asked
+              for.
             </p>
             <p>
-              Here, the person you talk to is the person who designs your site,
+              With me, the person you text is the person who designs your site,
               builds it, and picks up the phone after launch. You explain your
-              business once. Nothing gets lost in a handoff, and you&apos;re
-              not paying for anyone&apos;s office.
+              business once — to me — and nothing gets lost in a handoff.
+              You&apos;re also not paying for anyone&apos;s office.
             </p>
             <div className="about-sig-row">
               <div className="about-avatar">

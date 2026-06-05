@@ -13,9 +13,9 @@ export default function Hero() {
           <span className="stroke">No rent.</span>
         </h1>
         <p className="hero-sub reveal d3">
-          Agencies charge five figures. Page builders charge forever. I build your
-          site by hand — fast, sharp, and yours outright — for a price a small
-          business can actually say yes to.
+          Here&apos;s the deal: agencies charge five figures, and page builders
+          charge you forever. I just build you a great site by hand — fast,
+          sharp, yours outright — for a price you can actually say yes to.
         </p>
         <div className="hero-actions reveal d4">
           <a className="btn btn-primary" href="#contact">Start a project →</a>
