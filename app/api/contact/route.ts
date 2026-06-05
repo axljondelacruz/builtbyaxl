@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, business, message, website } = await req.json();
+    const { name, email, business, plan, message, website } = await req.json();
 
     // Honeypot: real visitors never fill the hidden "website" field.
     // Bots that do get a fake success so they don't retry.
@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     const apiKey = process.env.RESEND_API_KEY;
     // If no key is configured yet, accept the submission gracefully in dev.
     if (!apiKey) {
-      console.log("Contact (no RESEND_API_KEY set):", { name, email, business, message });
+      console.log("Contact (no RESEND_API_KEY set):", { name, email, business, plan, message });
       return NextResponse.json({ ok: true, note: "logged" });
     }
 
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
         to: ["hello@builtbyaxl.com"],
         reply_to: email,
         subject: `New project inquiry — ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nBusiness: ${business || "—"}\n\n${message}`,
+        text: `Name: ${name}\nEmail: ${email}\nBusiness: ${business || "—"}\nInterested in: ${plan || "—"}\n\n${message}`,
       }),
     });
 

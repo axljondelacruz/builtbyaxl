@@ -1,3 +1,5 @@
+import PlanCta from "./PlanCta";
+
 const tiers = [
   {
     no: "01",
@@ -67,9 +69,7 @@ export default function Pricing() {
                   <li key={f}>{f}</li>
                 ))}
               </ul>
-              <a className="btn btn-primary price-cta" href="#contact">
-                Start here →
-              </a>
+              <PlanCta plan={t.name} />
             </div>
           ))}
         </div>

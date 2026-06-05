@@ -329,6 +329,17 @@ a { color: inherit; text-decoration: none; }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--accent); box-shadow: 3px 3px 0 var(--accent); }
 .form-note { font-size: 14px; color: var(--steel); margin-top: 4px; }
 /* Honeypot field — visually removed, still in the DOM for bots */
+.plan-chips { display: flex; gap: 10px; flex-wrap: wrap; }
+.plan-chip {
+  font-weight: 700; font-size: 14px; padding: 9px 16px; cursor: pointer;
+  border: 2px solid var(--ink); background: transparent; color: var(--ink);
+  transition: background .15s, color .15s, box-shadow .15s, transform .15s;
+}
+.plan-chip:hover { background: var(--ink); color: var(--bone); }
+.plan-chip.selected {
+  background: var(--accent); color: var(--ink);
+  transform: translate(-2px,-2px); box-shadow: 4px 4px 0 var(--ink);
+}
 .hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .contact-side .line { display:flex; gap: 12px; align-items:flex-start; margin-bottom: 22px; }
 .contact-side .line .ic { width: 38px; height: 38px; border: 2px solid var(--ink); display:grid; place-items:center; flex-shrink:0; background: var(--accent); }
