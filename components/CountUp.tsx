@@ -17,7 +17,9 @@ export default function CountUp({ to, suffix = "", duration = 1100, delay = 0 }:
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let raf = 0;
-    setN(0);
+    // Reset on the next frame instead of synchronously in the effect body —
+    // sync setState in an effect triggers a cascading re-render warning.
+    raf = requestAnimationFrame(() => setN(0));
     const timer = window.setTimeout(() => {
       const start = performance.now();
       const tick = (now: number) => {
