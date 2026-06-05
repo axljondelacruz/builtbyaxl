@@ -21,9 +21,9 @@ export default function About() {
           <div className="about-copy rd-1" data-reveal>
             <p>
               Since graduating from college, I&apos;ve wanted to build for
-              small businesses — the shops and services that hold a
-              neighborhood together but rarely get a developer in their
-              corner. Built by Axl is that idea, all grown up.
+              the people agencies overlook — the shops that hold a
+              neighborhood together, and the founders with an idea and a
+              deadline. Built by Axl is that mission, all grown up.
             </p>
             <p>
               So when you work with me, the person you text is the person who

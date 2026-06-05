@@ -19,9 +19,9 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://builtbyaxl.com"),
-  title: "Built by Axl — Web design & development for small businesses",
+  title: "Built by Axl — Web design & development for small businesses & startups",
   description:
-    "Hand-built websites for small businesses and local companies in Las Vegas and beyond. One flat price, no page-builder fees, and a site you own outright.",
+    "Hand-built websites for small businesses, startups, and anyone with something to launch — Las Vegas and beyond. One flat price, no page-builder fees, and a site you own outright.",
   keywords: [
     "web design",
     "web development",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Built by Axl — Your website. Built for you, built with you.",
     description:
-      "Hand-built websites for small businesses. One flat price, no monthly fees, yours outright.",
+      "Hand-built websites for small businesses and startups. One flat price, no monthly fees, yours outright.",
     url: "https://builtbyaxl.com",
     siteName: "Built by Axl",
     type: "website",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Built by Axl — Your website. Built for you, built with you.",
     description:
-      "Hand-built websites for small businesses. One flat price, no monthly fees, yours outright.",
+      "Hand-built websites for small businesses and startups. One flat price, no monthly fees, yours outright.",
     images: ["/og.png"],
   },
   alternates: {

@@ -14,9 +14,10 @@ export default function Hero() {
           <span className="stroke">Built with you.</span>
         </h1>
         <p className="hero-sub reveal d3">
-          Small businesses deserve a great website without agency prices or
-          page-builder rent. That&apos;s what I build — by hand, fast, yours
-          outright. Think of me as the web developer in your corner.
+          You shouldn&apos;t need an agency budget — or monthly page-builder
+          rent — to get a great website. I build by hand, fast, and you own it
+          outright. Local shop or startup launch, I&apos;m the developer in
+          your corner.
         </p>
         <div className="hero-actions reveal d4">
           <a className="btn btn-primary" href="#contact">Start a project →</a>

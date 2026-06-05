@@ -14,9 +14,9 @@ export default function Services() {
         <div className="section-num" data-reveal>[ 01 ] — SERVICES</div>
         <h2 className="section-title display rd-1" data-reveal>What I build</h2>
         <p className="section-lead rd-2" data-reveal>
-          Everything your business needs to look legit online and bring in
-          work. Start with one piece or the whole package — I&apos;ll meet you
-          where you are.
+          Everything you need to look legit online and bring in work — for
+          your storefront, your service, or the thing you&apos;re about to
+          launch. Start with one piece or grab the whole package.
         </p>
         <div className="svc-grid">
           {services.map((s, i) => (

@@ -12,8 +12,8 @@ export default function Process() {
         <div className="section-num" data-reveal>[ 02 ] — PROCESS</div>
         <h2 className="section-title display rd-1" data-reveal>How it works</h2>
         <p className="section-lead rd-2" data-reveal>
-          Four simple steps, and I&apos;m with you for every one of them.
-          Built for owners who&apos;ve got a business to run.
+          Four steps, no runaround — and I&apos;m with you for every one of
+          them. Built for people with real work to get done.
         </p>
         <div className="steps">
           {steps.map((s, i) => (

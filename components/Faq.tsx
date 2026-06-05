@@ -44,7 +44,7 @@ export default function Faq() {
         <div className="section-num" data-reveal>[ 06 ] — FAQ</div>
         <h2 className="section-title display rd-1" data-reveal>Fair questions</h2>
         <p className="section-lead rd-2" data-reveal>
-          The stuff owners actually ask before hiring someone to build their
+          The stuff people actually ask before hiring someone to build their
           site. Straight answers, no fine print.
         </p>
         <div className="faq-list">
