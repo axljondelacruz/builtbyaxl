@@ -1,11 +1,23 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const plans = ["Landing Page", "Full Site", "Rebuild + Care"];
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "ok" | "invalid" | "err">("idle");
-  const [form, setForm] = useState({ name: "", email: "", business: "", message: "", website: "" });
+  const [form, setForm] = useState({ name: "", email: "", business: "", plan: "", message: "", website: "" });
 
   const update = (k: string, v: string) => setForm((f) => ({ ...f, [k]: v }));
+
+  // Pre-select a plan when a pricing card CTA is clicked.
+  useEffect(() => {
+    const onSelect = (e: Event) => {
+      const plan = (e as CustomEvent<string>).detail;
+      if (plans.includes(plan)) update("plan", plan);
+    };
+    window.addEventListener("plan-select", onSelect);
+    return () => window.removeEventListener("plan-select", onSelect);
+  }, []);
 
   const submit = async () => {
     if (!form.name || !form.email || !form.message) {
@@ -21,7 +33,7 @@ export default function Contact() {
       });
       if (!res.ok) throw new Error();
       setStatus("ok");
-      setForm({ name: "", email: "", business: "", message: "", website: "" });
+      setForm({ name: "", email: "", business: "", plan: "", message: "", website: "" });
     } catch {
       setStatus("err");
     }
@@ -64,6 +76,22 @@ export default function Contact() {
                 value={form.website}
                 onChange={(e) => update("website", e.target.value)}
               />
+            </div>
+            <div className="field" role="group" aria-labelledby="contact-plan-label">
+              <label id="contact-plan-label">Interested in</label>
+              <div className="plan-chips">
+                {plans.map((p) => (
+                  <button
+                    key={p}
+                    type="button"
+                    className={`plan-chip${form.plan === p ? " selected" : ""}`}
+                    aria-pressed={form.plan === p}
+                    onClick={() => update("plan", form.plan === p ? "" : p)}
+                  >
+                    {p}
+                  </button>
+                ))}
+              </div>
             </div>
             <div className="field">
               <label htmlFor="contact-message">What do you need? *</label>
