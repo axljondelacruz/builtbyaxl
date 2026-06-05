@@ -1,3 +1,5 @@
+import Avatar from "./Avatar";
+
 const compare = [
   { agency: "Account managers in the middle", axl: "A direct line to the person building it" },
   { agency: "Quotes padded for overhead", axl: "One flat price, no markup" },
@@ -29,7 +31,15 @@ export default function About() {
               business once. Nothing gets lost in a handoff, and you&apos;re
               not paying for anyone&apos;s office.
             </p>
-            <p className="about-sig">&mdash; Axl Jon Dela Cruz, Las Vegas, NV</p>
+            <div className="about-sig-row">
+              <div className="about-avatar">
+                <Avatar />
+              </div>
+              <div>
+                <p className="about-sig">&mdash; Axl Jon Dela Cruz</p>
+                <p className="about-sig-sub">Designer &amp; developer &middot; Las Vegas, NV</p>
+              </div>
+            </div>
           </div>
           <div className="about-compare">
             <div className="about-compare-head">
