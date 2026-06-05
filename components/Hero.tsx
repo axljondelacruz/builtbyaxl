@@ -6,17 +6,17 @@ export default function Hero() {
       <div className="wrap hero-grid">
         <div>
         <span className="hero-tag reveal d1">
-          <span className="dot" /> Web studio · Las Vegas
+          <span className="dot" /> Your web developer · Las Vegas
         </span>
         <h1 className="display reveal d2">
           Your website.<br />
-          <span className="hot">No agency.</span><br />
-          <span className="stroke">No rent.</span>
+          <span className="hot">Built for you.</span><br />
+          <span className="stroke">Built with you.</span>
         </h1>
         <p className="hero-sub reveal d3">
-          Here&apos;s the deal: agencies charge five figures, and page builders
-          charge you forever. I just build you a great site by hand — fast,
-          sharp, yours outright — for a price you can actually say yes to.
+          Small businesses deserve a great website without agency prices or
+          page-builder rent. That&apos;s what I build — by hand, fast, yours
+          outright. Think of me as the web developer in your corner.
         </p>
         <div className="hero-actions reveal d4">
           <a className="btn btn-primary" href="#contact">Start a project →</a>

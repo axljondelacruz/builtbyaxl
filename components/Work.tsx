@@ -21,7 +21,7 @@ const openSlots = [
   {
     no: "03",
     title: "Your business here",
-    desc: "This slot is open. If your shop, service, or side hustle needs a site, it could be the next thing on this wall.",
+    desc: "This slot is open. If your shop, service, or side hustle needs a site, I'd love to build it — and put your name on this wall.",
   },
 ];
 

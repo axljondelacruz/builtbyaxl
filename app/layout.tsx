@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "landing pages",
   ],
   openGraph: {
-    title: "Built by Axl — Your website. No agency. No rent.",
+    title: "Built by Axl — Your website. Built for you, built with you.",
     description:
       "Hand-built websites for small businesses. One flat price, no monthly fees, yours outright.",
     url: "https://builtbyaxl.com",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Built by Axl — Your website. No agency. No rent.",
+    title: "Built by Axl — Your website. Built for you, built with you.",
     description:
       "Hand-built websites for small businesses. One flat price, no monthly fees, yours outright.",
     images: ["/og.png"],
