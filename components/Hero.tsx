@@ -1,5 +1,4 @@
 import CountUp from "./CountUp";
-import Avatar from "./Avatar";
 
 export default function Hero() {
   return (
@@ -31,7 +30,13 @@ export default function Hero() {
         </div>
         <div className="hero-portrait reveal d4">
           <div className="hero-portrait-frame">
-            <Avatar />
+            {/* eslint-disable-next-line @next/next/no-img-element -- static asset; Pages has no image optimization */}
+            <img
+              src="/axl.png"
+              alt="Illustrated portrait of Axl Jon Dela Cruz"
+              width={800}
+              height={800}
+            />
           </div>
         </div>
       </div>
