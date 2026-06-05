@@ -11,14 +11,14 @@ export default function About() {
   return (
     <section className="section" id="about">
       <div className="wrap">
-        <div className="section-num">[ 04 ] &mdash; ABOUT</div>
-        <h2 className="section-title display">One person. On purpose.</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 04 ] &mdash; ABOUT</div>
+        <h2 className="section-title display rd-1" data-reveal>One person. On purpose.</h2>
+        <p className="section-lead rd-2" data-reveal>
           Built by Axl is one person &mdash; me. That&apos;s not a limitation.
           It&apos;s the whole point.
         </p>
         <div className="about-grid">
-          <div className="about-copy">
+          <div className="about-copy rd-1" data-reveal>
             <p>
               Hire an agency and you talk to a salesperson, get handed to an
               account manager, and your site gets built by someone you never
@@ -41,7 +41,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="about-compare">
+          <div className="about-compare rd-2" data-reveal>
             <div className="about-compare-head">
               <div className="col them">The agency way</div>
               <div className="col me">The Axl way</div>

@@ -41,15 +41,15 @@ export default function Faq() {
   return (
     <section className="section" id="faq">
       <div className="wrap">
-        <div className="section-num">[ 06 ] — FAQ</div>
-        <h2 className="section-title display">Fair questions</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 06 ] — FAQ</div>
+        <h2 className="section-title display rd-1" data-reveal>Fair questions</h2>
+        <p className="section-lead rd-2" data-reveal>
           The stuff owners actually ask before hiring someone to build their
           site. Straight answers, no fine print.
         </p>
         <div className="faq-list">
           {faqs.map((f) => (
-            <details className="faq-item" key={f.q}>
+            <details className="faq-item" data-reveal key={f.q}>
               <summary>
                 <span className="faq-q">{f.q}</span>
                 <span className="faq-marker" aria-hidden="true">+</span>

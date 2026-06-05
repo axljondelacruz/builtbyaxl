@@ -11,15 +11,15 @@ export default function Services() {
   return (
     <section className="section" id="services">
       <div className="wrap">
-        <div className="section-num">[ 01 ] — SERVICES</div>
-        <h2 className="section-title display">What I build</h2>
-        <p className="section-lead">
+        <div className="section-num" data-reveal>[ 01 ] — SERVICES</div>
+        <h2 className="section-title display rd-1" data-reveal>What I build</h2>
+        <p className="section-lead rd-2" data-reveal>
           Everything a small business needs to look legit online and bring in
           work. Pick one piece or the whole package.
         </p>
         <div className="svc-grid">
-          {services.map((s) => (
-            <div className="svc" key={s.no}>
+          {services.map((s, i) => (
+            <div className={`svc rd-${(i % 3) + 1}`} data-reveal key={s.no}>
               <div className="svc-no">{s.no}</div>
               <h3>{s.title}</h3>
               <p className="svc-desc">{s.desc}</p>

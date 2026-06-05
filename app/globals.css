@@ -117,6 +117,21 @@ a { color: inherit; text-decoration: none; }
 .d4 { animation-delay: .35s; } .d5 { animation-delay: .45s; }
 @keyframes rise { to { opacity: 1; transform: translateY(0); } }
 
+/* nav drops in on load */
+.nav { animation: navDrop .5s cubic-bezier(.2,.7,.2,1); }
+@keyframes navDrop { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+
+/* scroll reveal — .fx is set on <html> by ScrollReveal.tsx only when JS is
+   running and the visitor is OK with motion; without it nothing is hidden */
+.fx [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--rd, 0s);
+}
+.fx [data-reveal="in"] { opacity: 1; transform: none; }
+.rd-1 { --rd: .08s; } .rd-2 { --rd: .16s; } .rd-3 { --rd: .24s; } .rd-4 { --rd: .32s; }
+
 /* ---------- SECTION HEADERS ---------- */
 .section { padding: 80px 0; position: relative; }
 .section-num { font-family: "Archivo Black", sans-serif; color: var(--accent); font-size: 14px; letter-spacing: 0.1em; }
@@ -345,6 +360,8 @@ a:focus-visible, button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { animation: none; opacity: 1; transform: none; }
+  .nav { animation: none; }
+  .fx [data-reveal] { transition: none; opacity: 1; transform: none; }
   .btn, .nav-cta, .svc, .work-card { transition: none; }
 }
 
