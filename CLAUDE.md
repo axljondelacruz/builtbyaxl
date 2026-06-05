@@ -35,7 +35,9 @@ owners: plain language, concrete benefits, no jargon.
   (edge runtime), which sends via the Resend API.
 - **Styling:** Plain CSS in `app/globals.css` using CSS variables. No Tailwind,
   no CSS-in-JS. Keep it that way unless explicitly told otherwise.
-- **Fonts:** Loaded from Google Fonts in `app/layout.tsx`.
+- **Fonts:** Google Fonts (Archivo Black, DM Sans) self-hosted at build time
+  via `next/font/google` in `app/layout.tsx`, exposed as CSS variables
+  (`--font-archivo-black`, `--font-dm-sans`) referenced in `globals.css`.
 
 ## Brand system
 

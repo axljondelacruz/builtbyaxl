@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import { Archivo_Black, DM_Sans } from "next/font/google";
 import "./globals.css";
+
+// Self-hosted at build time via next/font — no render-blocking request to
+// Google, no layout shift. Exposed as CSS variables used in globals.css.
+const archivoBlack = Archivo_Black({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-archivo-black",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://builtbyaxl.com"),
@@ -50,15 +66,11 @@ export default function RootLayout({
   // suppressHydrationWarning: ScrollReveal's boot script adds the `fx`
   // class to <html> before React hydrates, which is intentional.
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${archivoBlack.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
+    >
       <body>{children}</body>
     </html>
   );
