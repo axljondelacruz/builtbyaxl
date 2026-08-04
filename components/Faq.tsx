@@ -1,7 +1,7 @@
 const faqs = [
   {
     q: "How much does a website cost?",
-    a: "Landing pages start at $750, full sites at $2,500 — see the pricing above. You'll get a flat quote before any work starts, and that's the number you pay. No surprise line items.",
+    a: "Landing pages start at $500, full sites at $1,500 — see the pricing above. You'll get a flat quote before any work starts, and that's the number you pay. No surprise line items.",
   },
   {
     q: "How long does it take?",
